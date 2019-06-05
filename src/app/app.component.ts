@@ -32,6 +32,11 @@ export class AppComponent implements OnInit {
       'gender': 'male',
       'hobbies': []
     });
+    this.signupForm.patchValue({
+      'userData': {
+        'username': 'Anna'
+      }
+    });
   }
 
   onSubmit() {
